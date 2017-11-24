@@ -296,7 +296,7 @@ ul,ol, menu, dir {-webkit-padding-start:0}
 .f_nav i{font-size:0.72rem;line-height:.8rem}
 .f_nav .mui-tab-item{color:#999;font-size:0.32rem}
 .f_nav i{position:relative}
-.f_nav .icon-dot{right:-.22rem;top:-0.04rem;display: none}
+.f_nav .icon-dot{right:-.22rem;top:-0.04rem}
 
 .f_sub_nav{bottom:1.466667rem;height:1.2rem;line-height:1.2rem}
 .f_sub_nav .btn_red,.f_sub.f_nav .btn_red{padding:0 0.746667rem}

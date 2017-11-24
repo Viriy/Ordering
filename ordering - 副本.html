@@ -22,14 +22,14 @@
     <!-- 合计 -->
     <div class="mui-bar mui-bar-tab f_sub_nav" flex>
         <h2 class="f32 flex1 color pdlr ellipsis">共<em class="red">3</em>件商品，合计<em class="red">￥36</em></h2>
-        <a class="btn_red f32 redbg" href=".html" title="去结算" alt="去结算" flex>
+        <a class="btn_red f32 redbg" href="order_eat_in.html" title="去结算" alt="去结算" flex>
             去结算
         </a>
     </div>
     <!--footer-->
     <footer class="mui-bar mui-bar-tab f_nav">
         <a class="mui-tab-item" href="cart.html">
-            <i class="icon-cart"><i class="icon-dot redbg radius pa bold i">3</i></i>
+            <i id="shopCart" class="icon-cart"><i class="icon-dot redbg radius pa bold i"></i></i>
             <p class="mui-tab-label">购物车</p>
         </a>
         <a class="mui-tab-item mui-active" href="ordering.html">
@@ -87,8 +87,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" value="3" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                     <li>
@@ -101,8 +101,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                     <li>
@@ -115,8 +115,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                     <li>
@@ -129,8 +129,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                     <li>
@@ -143,8 +143,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                     <li>
@@ -157,8 +157,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                     <li>
@@ -171,8 +171,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                     <li>
@@ -185,8 +185,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                 </ul>
@@ -211,8 +211,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                 </ul>
@@ -231,8 +231,8 @@
                         </a>
                         <div class="mui-numbox" data-numbox-min='0' flex>
                             <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
-                            <input class="mui-input-numbox" type="number" />
-                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                            <input class="mui-input-numbox" type="number" readonly />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add btnCart" type="button"></button>
                         </div>
                     </li>
                 </ul>
@@ -274,9 +274,53 @@
                 <h2 class="title_line f24 grey tc pr"><em class="i"><i class="icon-food"></i>其它</em></h2>
             </div>
         </div>
+        <div id="flyItem" class="fly_item"></div>
     </div>
     <script src="js/mui.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/parabola.js"></script>
+    <script>
+    var eleFlyElement = document.querySelector("#flyItem"),
+        eleShopCart = document.querySelector("#shopCart"),
+        eledishNum = document.querySelector("#shopCart i");
+    var numberItem = 0;
+    var myParabola = funParabola(eleFlyElement, eleShopCart, {
+        speed: 700,
+        curvature: 0.001,
+        complete: function() {
+            eleFlyElement.style.visibility = "hidden";
+        }
+    });
+    [].slice.call(document.getElementsByClassName("icon-add")).forEach(function(button) {
+        button.addEventListener("click", function() {
+            eledishNum.style.display = "block";
+            eleShopCart.querySelector("i").innerHTML = ++numberItem
+        })
+    });
+
+    [].slice.call(document.getElementsByClassName("icon-reduce")).forEach(function(button) {
+        button.addEventListener("click", function() {
+            if (eleShopCart.querySelector("i").innerHTML > 1) {
+                eleShopCart.querySelector("i").innerHTML = --numberItem;
+            } else {
+                eledishNum.style.display = "none";
+            }
+        })
+    });
+
+    if (eleFlyElement && eleShopCart) {
+        [].slice.call(document.getElementsByClassName("btnCart")).forEach(function(button) {
+            button.addEventListener("click", function(event) {
+                var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+                    scrollTop = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                eleFlyElement.style.left = event.clientX + scrollLeft + "px";
+                eleFlyElement.style.top = event.clientY + scrollTop + "px";
+                eleFlyElement.style.visibility = "visible";
+                myParabola.position().move()
+            })
+        })
+    }
+    </script>
 </body>
 
 </html>
