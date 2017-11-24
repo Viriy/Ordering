@@ -435,7 +435,7 @@ svg{vertical-align:top}
 .cart_info{width:1.6rem;height:1.6rem;line-height:1.6rem;margin-left:0.666667rem;margin-bottom:0.56rem;overflow:visible}
 .cart_info{color:#3b3a38}
 .cart_info .icon-dot{top:.2rem;right:-.04rem;width:.54rem;height:.54rem;line-height:.54rem;font-size:0.346667rem !important}
-.cd_head{background:url(../images/f_bg.jpg) no-repeat;background-size:8.0rem;line-height:0.746667rem;margin-top:-0.666667rem;z-index:6}
+.cd_head{background:url(../images/f_bg.jpg) no-repeat;background-size:8.0rem;line-height:0.9rem;margin-top:-0.666667rem;z-index:6}
 .title_default{line-height:0.746667rem}
 .title_default i{vertical-align:baseline}
 .dishes_txt{line-height:0.56rem}
