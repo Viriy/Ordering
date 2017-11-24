@@ -437,7 +437,7 @@ svg{vertical-align:top}
 .cart_info .icon-dot{top:.2rem;right:-.04rem;width:.54rem;height:.54rem;line-height:.54rem;font-size:0.346667rem !important}
 .cd_head{background:url(../images/f_bg.jpg) no-repeat;background-size:cover;line-height:0.9rem;margin-top:-0.666667rem;z-index:6}
 .cd_head .mui-numbox{width:3rem;height:.9rem;}
-.cd_head .mui-numbox [class*=btn-numbox],.cd_head .mui-numbox [class*=numbox-btn]{width: .9rem;height: .9rem;font-size: 0.42rem;}
+.cd_head .mui-numbox [class*=btn-numbox],.cd_head .mui-numbox [class*=numbox-btn]{width: .9rem;height: .9rem;font-size: 0.5rem;}
 .cd_head .mui-numbox input{font-size: .5rem}
 .title_default{line-height:0.746667rem}
 .title_default i{vertical-align:baseline}
