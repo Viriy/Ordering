@@ -301,6 +301,7 @@ ul,ol, menu, dir {-webkit-padding-start:0}
 .f_sub_nav{bottom:1.466667rem;height:1.2rem;line-height:1.2rem}
 .f_sub_nav .btn_red,.f_sub.f_nav .btn_red{padding:0 0.746667rem}
 .f_sub.f_nav{line-height:1.466667rem}
+.f_sub_nav em.red{font-weight: 700}
 
 i.icon-dot{height:.4rem;line-height:.4rem;min-width:.4rem;padding:0 .05rem;font-size:0.293333rem !important}
 svg{vertical-align:top}
