@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>详情-馐缘阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/ocolorfont.js"></script>
+</head>
+
+<body class="bodybg">
+    <!--header-->
+    <header class="mui-bar mui-bar-nav h_header mainbg white tc">
+        <a href="jabvascript:;" class="mui-action-back pa icon icon-back f50 t0 l0"></a>
+        <h1 class="mui-title">红烧肉套餐</h1>
+    </header>
+    <!--footer-->
+    <footer class="mui-bar mui-bar-tab f_nav f_sub darkbg" flex>
+        <a href="cart.html" class="cart_info mainbg icon-cart f90 db radius tc pr"><i class="icon-dot redbg radius pa bold i">3</i></a>
+        <h2 class="f32 flex1 pdlr ellipsis">￥36.00</h2>
+        <a class="btn_red f32 redbg" href="order_eat_in.html" title="提交订单" alt="提交订单" flex>
+            选好了
+        </a>
+    </footer>
+    <div class="mui-content mui-row">
+        <div class="swiper-container swiper-bar">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href=""><img src="images/food_img.jpg" /></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href=""><img src="images/food_img.jpg" /></a>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="cd_head tc mlr75 pd radius4 pr">
+            <h2 class="f36 bold">红烧肉套餐</h2>
+            <p><em class="f50 red mr10">&yen;12</em>/份</p>
+            <div class="mui-numbox m_auto mt mb10" data-numbox-min='0' flex>
+                <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
+                <input class="mui-input-numbox" type="number" />
+                <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+            </div>
+        </div>
+        <div class="dishes_details bgfff mlr75 pd mt radius4">
+            <h3 class="title_default f32 color mb10"><i class="icon-des f26 maincolor mr10"></i><em class="bold">菜品介绍</em></h3>
+            <div class="dishes_txt">
+                红烧肉套餐，配菜玉米，木耳红烧肉套餐，配菜玉米，木耳红烧肉套餐，配菜玉米，木耳红烧肉套餐，配菜玉米，木耳
+            </div>
+        </div>
+        <div class="restaurant_info bgfff mlr75 pd mt mb50 radius4" flex>
+            <img class="radius box_shadow mr" src="images/logo.jpg" alt="">
+            <div class="f28 flex1">
+                <h3 class="f32 color">馐缘阁<a class="icon-tel f50 maincolor ml24" href="tel:13000000000"></a></h3>
+                <p>西安市凤城九路文景路西北角</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript">
+    if ($(".swiper-bar img").length > 1) {
+        $(".swiper-bar").swiper({
+            pagination: '.swiper-pagination',
+            autoHeight:1
+        });
+    }
+    </script>
+</body>
+
+</html>

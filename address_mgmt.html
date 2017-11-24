@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>送餐地址-馐缘阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/ocolorfont.js"></script>
+</head>
+
+<body class="bodybg">
+    <!--header-->
+    <header class="mui-bar mui-bar-nav h_header mainbg white tc">
+        <a href="jabvascript:;" class="mui-action-back pa icon icon-back f50 t0 l0"></a>
+        <h1 class="mui-title">送餐地址</h1>
+    </header>
+    <!--footer-->
+    <footer class="mui-bar mui-bar-tab f_nav f_sub" flex="main:center">
+        <a class="f36 mainbg flex1 tc" href="address_add.html" title="新增收货地址" alt="新增收货地址">
+            新增收货地址
+        </a>
+    </footer>
+    <div class="mui-content mui-row mt">
+        <!-- 暂无收货地址 -->
+        <a class="no_address f32 db tc mt100" href="address_add.html">
+            <svg>
+                <use xlink:href="#icon-address"></use>
+            </svg>
+            <p>未添加送餐地址，<span class="maincolor">去添加></span></p>
+        </a>
+        
+        <!-- 管理收货地址 -->
+        <!-- <div class="address_wrap address_mgmt db mb" href="#offCanvasSide">
+            <div class="address_info">
+                <p class="f36 color mb" flex="main:justify"><em class="mr">张先生</em><em>138 0000 0000</em></p>
+                <p flex>
+                    <i class="tag lightgreenbg white radius mr">地址</i>
+                    <span class="f28 flex1">西安市高新区锦业路绿地中央广场领海AB座1幢11908号</span>
+                </p>
+            </div>
+            <h3 class="f32 color bor_t" flex>
+                <label class="flex1">
+                    <input type="radio" name="default_address" checked><i class="icon-checkbox"></i>默认地址
+                </label>
+                <a class="maincolor pdlr" href="address_add.html"><i class="icon-update f40 mr10"></i>编辑</a>
+                <a class="btn_del red pdlr" href=""><i class="icon-del f40 mr10"></i>删除</a>
+            </h3>
+        </div>
+        <div class="address_wrap address_mgmt db mb" href="#offCanvasSide">
+            <div class="address_info">
+                <p class="f36 color mb" flex="main:justify"><em class="mr">test</em><em>138 0000 0000</em></p>
+                <p flex>
+                    <i class="tag lightgreenbg white radius mr">地址</i>
+                    <span class="f28 flex1">testtesttesttesttesttest</span>
+                </p>
+            </div>
+            <h3 class="f32 color bor_t" flex>
+                <label class="flex1">
+                    <input type="radio" name="default_address"><i class="icon-checkbox"></i>默认地址
+                </label>
+                <a class="maincolor pdlr" href="address_add.html"><i class="icon-update f40 mr10"></i>编辑</a>
+                <a class="btn_del red pdlr" href=""><i class="icon-del f40 mr10"></i>删除</a>
+            </h3>
+        </div> -->
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    //删除送餐地址
+    mui('body').on('tap', '.btn_del', function() {
+        var btnArray = ['否', '是'];
+        mui.confirm('删除后将无法恢复，确认删除？', '确认删除', btnArray, function(e) {
+            if (e.index == 1) {
+                //是
+            } else {
+                //否
+            }
+        })
+    });
+    </script>
+</body>
+
+</html>

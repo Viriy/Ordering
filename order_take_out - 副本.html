@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>提交订单-馐缘阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link href="css/mui.picker.css" rel="stylesheet" />
+    <link href="css/mui.poppicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/ocolorfont.js"></script>
+</head>
+
+<body class="bodybg">
+    <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+        <!--侧滑菜单部分-->
+        <aside id="offCanvasSide" class="mui-off-canvas-right full_page">
+            <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+                <!--header-->
+                <header class="mui-bar mui-bar-nav h_header mainbg white">
+                    <a href="#offCanvasSide" class="pa icon icon-back f50 t0 l0 tc"></a>
+                    <h1 class="mui-title">选择收货地址</h1>
+                </header>
+                <!--footer-->
+                <footer class="mui-bar mui-bar-tab f_nav f_sub" flex>
+                    <a class="btn_red f32 redbg flex1" href=".html" title="提交订单" alt="提交订单" flex="main:center">新增收货地址</a>
+                </footer>
+                <div class="mui-scroll mui-content">
+                    <a href="#offCanvasSide">6212321321321</a>
+                </div>
+            </div>
+        </aside>
+        <!--主界面部分-->
+        <div class="mui-inner-wrap">
+            <!--header-->
+            <header class="mui-bar mui-bar-nav h_header mainbg white">
+                <h1 class="mui-title">提交订单</h1>
+            </header>
+            <!--footer-->
+            <footer class="mui-bar mui-bar-tab f_nav f_sub" flex>
+                <h2 class="f32 flex1 colorlight pdlr ellipsis tr">合计<em class="red">￥36.00</em></h2>
+                <a class="btn_red f32 redbg" href=".html" title="提交订单" alt="提交订单" flex>
+            提交订单
+        </a>
+            </footer>
+            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+                <div class="order_tabbar">
+                    <div class="mui-segmented-control" flex>
+                        <a class="mui-control-item" href="order_eat_in.html"><i class="i i_circle"></i><p>堂食</p></a>
+                        <a class="mui-control-item mui-active" href="##"><i class="i i_circle"></i><p>朕要外卖</p></a>
+                    </div>
+                    <div class="mui-control-content mui-active">
+                        <ul class="order_list mb">
+                            <li>
+                                <ul class="list_wrap ordering_list f32 color">
+                                    <li>
+                                        <a href="" flex>
+                                            <img src="images/food2.jpg" alt="">
+                                            <div class="txt_wrap flex1">
+                                                <h3>黑椒牛柳套餐</h3>
+                                                <p flex="main:justify">
+                                                    <em class="red f40 flex1">&yen;12</em>
+                                                    <em class="grey f26">×1</em>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="total tr bor_t"><span>共1件商品</span><span>小计￥18 （含配送费￥6.00）</span></div>
+                            </li>
+                        </ul>
+                        <!-- 添加地址 -->
+                        <!-- <div class="address_wrap mb">
+                            <h3 class="bor_b f32 color">送餐地址</h3>
+                            <a class="address_info f32 db tc" href="">
+                                <svg>
+                                    <use xlink:href="#icon-address"></use>
+                                </svg>
+                                <p>未添加送餐地址，<span class="maincolor">去添加></span></p>
+                            </a>
+                        </div> -->
+                        <a class="address_wrap db mb" href="#offCanvasSide">
+                            <h3 class="bor_b f32 color">送餐地址</h3>
+                            <div class="address_info">
+                                <p class="f32 color mb10"><em class="mr">张先生</em><em>138 0000 0000</em></p>
+                                <p flex>
+                                    <i class="tag lightgreenbg white radius mr">地址</i>
+                                    <span class="f28 flex1">西安市高新区锦业路绿地中央广场领海AB座1幢11908号</span>
+                                </p>
+                            </div>
+                        </a>
+                        <ul class="link_wrap bgfff f32 color">
+                            <li>
+                                <a href="#popover_pay" flex="main:justify">
+                                    <em>支付方式</em>
+                                    <div id="pay_mode">
+                                        <span class="green"><i class="icon-wechart f60 mr10"></i>微信支付</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="link_wrap table_num bgfff f32 color mt bor_b">
+                            <li>
+                                <button id='show_send_time' flex="main:justify">
+                                    <em>送餐时段</em>
+                                    <span id='send_time_txt' class="colorlight">立即送出</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="list_wrap bgfff f32 color form_wrap form_default">
+                            <li flex="main:justify">
+                                <em>口味</em>
+                                <div class="mui-segmented-control mui-segmented-control-inverted grey f28 tab_flavor">
+                                    <a class="mui-control-item">麻辣</a>
+                                    <a class="mui-control-item">中辣</a>
+                                    <a class="mui-control-item mui-active">微辣</a>
+                                    <a class="mui-control-item">不辣</a>
+                                </div>
+                            </li>
+                            <li flex>
+                                <em>备注</em>
+                                <input class="flex1 tr" type="text" name="" placeholder="请填写备注信息">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 选择支付方式 -->
+                <div id="popover_pay" class="mui-popover mui-popover-action mui-popover-bottom">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell">
+                            <a href="#"><span class="green"><i class="icon-wechart f60 mr10"></i>微信支付</span></a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a href="#"><span class="red"><i class="icon-vip-card f60 mr10"></i>会员卡余额支付</span></a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a href="#"><span class="maincolor"><i class="icon-bar f60 mr10"></i>吧台支付</span></a>
+                        </li>
+                    </ul>
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell cancle">
+                            <a href="#popover_pay"><b>取消</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- off-canvas backdrop -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+        <script src="js/mui.min.js"></script>
+        <script src="js/mui.picker.min.js"></script>
+        <script src="js/mui.poppicker.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        //支付方式
+        var pay_mode = document.getElementById("pay_mode");
+        mui('body').on('tap', '#popover_pay .mui-table-view:first-child li>a', function() {
+            var a = this,
+                parent;
+            //根据点击按钮，反推当前是哪个actionsheet
+            for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+                if (parent.classList.contains('mui-popover-action')) {
+                    break;
+                }
+            }
+            //关闭actionsheet
+            mui('#' + parent.id).popover('toggle');
+            pay_mode.innerHTML = a.innerHTML;
+        })
+
+        //送餐时间
+        var timePicker = new mui.PopPicker();
+        timePicker.setData([{
+            value: '',
+            text: '立即送出'
+        }, {
+            value: '',
+            text: '10:00'
+        }, {
+            value: '',
+            text: '11:00'
+        }, {
+            value: '',
+            text: '12:00'
+        }, {
+            value: '',
+            text: '13:00'
+        }, {
+            value: '',
+            text: '14:00'
+        }, {
+            value: '',
+            text: '15:00'
+        }, {
+            value: '',
+            text: '16:00'
+        }, {
+            value: '',
+            text: '17:00'
+        }, {
+            value: '',
+            text: '18:00'
+        }, {
+            value: '',
+            text: '19:00'
+        }, {
+            value: '',
+            text: '20:00'
+        }]);
+        var showTimePickerButton = document.getElementById('show_send_time');
+        var send_time_txt = document.getElementById('send_time_txt');
+        showTimePickerButton.addEventListener('tap', function(event) {
+            timePicker.show(function(items) {
+                send_time_txt.innerText = items[0].text;
+            });
+        }, false);
+        </script>
+</body>
+
+</html>

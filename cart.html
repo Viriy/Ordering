@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>购物车-馐缘阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/ocolorfont.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header class="mui-bar mui-bar-nav h_header mainbg white">
+        <h1 class="mui-title">购物车</h1>
+        <a href="user.html" class="user_link pa t0 r0 radius box_shadow"><img src="images/avatar.gif" alt=""></a>
+    </header>
+    <!-- 合计 -->
+    <div class="mui-bar mui-bar-tab f_sub_nav" flex>
+        <h2 class="f32 flex1 color pdlr ellipsis">共<em class="red">3</em>件商品，合计<em class="red">￥36</em></h2>
+        <a class="btn_red f32 redbg" href=".html" title="去结算" alt="去结算" flex>
+            去结算
+        </a>
+    </div>
+    <!--footer-->
+    <footer class="mui-bar mui-bar-tab f_nav">
+        <a class="mui-tab-item mui-active" href="cart.html">
+            <i class="icon-cart"><i class="icon-dot redbg radius pa bold i">3</i></i>
+            <p class="mui-tab-label">购物车</p>
+        </a>
+        <a class="mui-tab-item" href="ordering.html">
+            <i class="icon-ordering"></i>
+            <p class="mui-tab-label">订餐</p>
+        </a>
+        <a class="mui-tab-item" href="user_order.html">
+            <i class="icon-order"></i>
+            <p class="mui-tab-label">我的订单</p>
+        </a>
+    </footer>
+    <div class="mui-content mui-row mui-fullscreen">
+        <div class="cart_wrap" style="">
+            <div class="mui-control-content mui-active">
+                <ul class="list_wrap ordering_list f32 color">
+                    <li>
+                        <a href="cate_details.html" flex>
+                            <img src="images/food1.jpg" alt="">
+                            <div class="txt_wrap flex1">
+                                <h3>红烧肉套餐</h3>
+                                <em class="red f40 flex1">&yen;12</em>
+                            </div>
+                        </a>
+                        <div class="mui-numbox" data-numbox-min='0' flex>
+                            <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
+                            <input class="mui-input-numbox" type="number" value="2" />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cate_details.html" flex>
+                            <img src="images/food2.jpg" alt="">
+                            <div class="txt_wrap flex1">
+                                <h3>黑椒牛柳套餐</h3>
+                                <em class="red f40 flex1">&yen;12</em>
+                            </div>
+                        </a>
+                        <div class="mui-numbox" data-numbox-min='0' flex>
+                            <button class="mui-btn mui-btn-numbox-minus icon-reduce" type="button"></button>
+                            <input class="mui-input-numbox" type="number" value="1" />
+                            <button class="mui-btn mui-btn-numbox-plus icon-add" type="button"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

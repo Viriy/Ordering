@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>我的订单-馐缘阁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/resize.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/ocolorfont.js"></script>
+</head>
+
+<body class="bodybg">
+    <!--header-->
+    <header class="mui-bar mui-bar-nav h_header mainbg white">
+        <h1 class="mui-title">我的订单</h1>
+        <a href="user.html" class="user_link pa t0 r0 radius box_shadow"><img src="images/avatar.gif" alt=""></a>
+    </header>
+    <nav class="mui-bar mui-bar-nav tab_popup f28 tc bgfff grey" flex="box:mean">
+        <a class="mui-tab-item" href="#Popover_0">全部订单<i class="icon-down ml"></i></a>
+        <a class="mui-tab-item" href="#Popover_1">按时间降序<i class="icon-down ml"></i></a>
+    </nav>
+    <!--footer-->
+    <footer class="mui-bar mui-bar-tab f_nav">
+        <a class="mui-tab-item" href="cart.html">
+            <i class="icon-cart"><i class="icon-dot redbg radius pa bold i">3</i></i>
+            <p class="mui-tab-label">购物车</p>
+        </a>
+        <a class="mui-tab-item" href="ordering.html">
+            <i class="icon-ordering"></i>
+            <p class="mui-tab-label">订餐</p>
+        </a>
+        <a class="mui-tab-item mui-active" href="user_order.html">
+            <i class="icon-order"></i>
+            <p class="mui-tab-label">我的订单</p>
+        </a>
+    </footer>
+    <div class="mui-content mui-row mui-fullscreen pr">
+        <div id="Popover_0" class="mui-popover mui-bar-popover popover0 tc f26 grey">
+            <div class="mui-popover-arrow"></div>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell"><a href="#">全部订单</a>
+                </li>
+                <li class="mui-table-view-cell"><a href="#">已完成订单</a>
+                </li>
+                <li class="mui-table-view-cell"><a href="#">未完成订单</a>
+                </li>
+            </ul>
+        </div>
+        <div id="Popover_1" class="mui-popover mui-bar-popover popover1 tc f26 grey">
+            <div class="mui-popover-arrow"></div>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell"><a href="#">按时间降序</a>
+                </li>
+                <li class="mui-table-view-cell"><a href="#">按时间升序</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="order_list mb">
+            <li>
+                <div class="head bor_b" flex>
+                    <div class="flex1" flex>
+                        <i class="tag redbg radius4 mr i">外卖</i>
+                        <em class="maincolor">交易成功</em>
+                    </div>
+                    <time class="grey">2017-11-15 00:00:00</time>
+                </div>
+                <ul class="list_wrap ordering_list f32 color">
+                    <li>
+                        <a href="cate_details.html" flex>
+                            <img src="images/food1.jpg" alt="">
+                            <div class="txt_wrap flex1">
+                                <h3>红烧肉套餐</h3>
+                                <p flex="main:justify">
+                                    <em class="red f40 flex1">&yen;12</em>
+                                    <em class="grey f26">×2</em>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cate_details.html" flex>
+                            <img src="images/food2.jpg" alt="">
+                            <div class="txt_wrap flex1">
+                                <h3>黑椒牛柳套餐</h3>
+                                <p flex="main:justify">
+                                    <em class="red f40 flex1">&yen;12</em>
+                                    <em class="grey f26">×1</em>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="total tr bor_t"><span>共4件商品</span><span>合计￥42</span><span>（含配送费￥6.00）</span></div>
+                <div class="one_more bor_t" flex="dir:right"><a class="btn_bor i radius4" href="">再来一单</a></div>
+            </li>
+            <li>
+                <div class="head bor_b" flex>
+                    <div class="flex1" flex>
+                        <i class="tag redbg radius4 mr i">堂食</i>
+                        <em class="colorlight">待支付</em>
+                    </div>
+                    <time class="grey">2017-11-15 00:00:00</time>
+                </div>
+                <ul class="list_wrap ordering_list f32 color">
+                    <li>
+                        <a href="cate_details.html" flex>
+                            <img src="images/food1.jpg" alt="">
+                            <div class="txt_wrap flex1">
+                                <h3>红烧肉套餐</h3>
+                                <p flex="main:justify">
+                                    <em class="red f40 flex1">&yen;12</em>
+                                    <em class="grey f26">×2</em>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="total tr bor_t"><span>共2件商品</span><span>合计￥24</span></div>
+                <div class="one_more bor_t" flex="dir:right"><a class="btn_bor i radius4" href="">再来一单</a></div>
+            </li>
+        </ul>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
